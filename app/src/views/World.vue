@@ -1,3 +1,3 @@
 <template>
-  <country-class></country-class>
+  <world-header></world-header>
 </template>
