@@ -10,7 +10,7 @@
 <script>
 import Search from '@/components/Search'
 import WorldHeader from '@/components/worldHeader'
-import Country from '@/components/Country'
+import CountryBox from '@/components/CountryBox'
 
 
 export default {
@@ -18,7 +18,7 @@ export default {
     
     Search, 
     WorldHeader, 
-    Country
+    CountryBox
   }
 }
 </script>
