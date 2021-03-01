@@ -1,3 +1,11 @@
 <template>
-    <div class="country-class"><h1>test</h1></div>
+    <div class="country-container">
+        <div class="country">
+            <div class="country__flag"></div>
+            <div class="country__name">
+                <div class="country__info"></div>
+            </div>
+        </div>
+    </div>
 </template>
+

@@ -1,7 +1,6 @@
 <template>
   <div id="nav">
-    
-    <router-link to="/world">Where in the world?</router-link>
+   <router-link to="/world">Where in the world?</router-link>
   </div>
   <router-view/>
 </template>
