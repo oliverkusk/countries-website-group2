@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Country from '../components/Country.vue'
-
+import worldHeader from '../components/worldHeader.vue'
 
 
 const routes = [
@@ -10,7 +10,11 @@ const routes = [
     path: '/world',
     name: 'Country',
     component: Country
-    
+  },
+  {
+    path: '/world',
+    name: 'header',
+    component: worldHeader
   }
 ]
 
