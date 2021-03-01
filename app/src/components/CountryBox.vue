@@ -11,6 +11,6 @@
 
 
 <style lang="scss" >
-@import '@/assets/scss/country.scss'
+@import '@/assets/scss/country.scss';
 </style>
 
