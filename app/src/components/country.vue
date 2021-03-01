@@ -9,3 +9,8 @@
     </div>
 </template>
 
+
+<style lang="scss" scoped>
+@import url("../assets/scss/country.scss");
+</style>
+
