@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Search from '../components/Search'
-import WorldHeader from '../components/worldHeader'
+import Search from '@/components/Search'
+import WorldHeader from '@/components/worldHeader'
 
 export default {
   components: {

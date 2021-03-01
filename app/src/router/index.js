@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import World from '../views/World'
+import World from '@/views/World'
 
 
 const routes = [
