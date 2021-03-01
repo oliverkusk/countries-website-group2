@@ -12,11 +12,11 @@
 import Search from '@/components/Search'
 import RegionFilter from '@/components/Filter'
 import WorldHeader from '@/components/worldHeader'
-import CountryBox from '@/components/CountryBox'
+import CountryContainer from '@/components/CountryBox'
 
 export default {
   components: {
-    Search, RegionFilter, WorldHeader, CountryBox
+    Search, RegionFilter, WorldHeader, CountryContainer
   }
 }
 </script>
