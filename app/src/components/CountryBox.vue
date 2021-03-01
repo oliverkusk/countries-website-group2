@@ -1,5 +1,5 @@
 <template>
-    <div class="country-container">
+    <div class="country-container">jdhkjdhkjdh
         <div class="country">
             <div class="country__flag"></div>
             <div class="country__name">
@@ -10,7 +10,7 @@
 </template>
 
 
-<style lang="scss" scoped>
-@import url("../assets/scss/country.scss");
+<style lang="scss" >
+@import '@/assets/scss/country.scss'
 </style>
 
