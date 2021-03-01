@@ -10,5 +10,5 @@
 </template>
 
 <style lang="scss">
-    @import '.assets/scss/searchfilter'
+    @import '@/assets/scss/searchfilter.scss'
 </style>
