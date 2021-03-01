@@ -1,6 +1,6 @@
 <template>
     <div class="filter">
-        <button onclick="myFunction()" class="filter__dropbtn">Filter by Region</button>
+        <button class="filter__dropbtn">Filter by Region</button>
         <div class="filter__dropdown">
             <a href="#africa">Africa</a>
             <a href="#america">America</a>
@@ -12,5 +12,5 @@
 </template>
 
 <style lang="scss">
-    @import '@/assets/scss/searchfilter.scss'
+    @import '@/assets/scss/searchfilter.scss';
 </style>

@@ -2,16 +2,18 @@
   <div>
   <world-header></world-header>
   <search></search>
+  <region-filter></region-filter>
   </div>
 </template>
 
 <script>
-import Search from '../components/Search'
-import WorldHeader from '../components/worldHeader'
+import Search from '@/components/Search'
+import RegionFilter from '@/components/Filter'
+import WorldHeader from '@/components/worldHeader'
 
 export default {
   components: {
-    Search, WorldHeader
+    Search, RegionFilter, WorldHeader
   }
 }
 </script>
