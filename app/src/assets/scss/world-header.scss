@@ -2,4 +2,25 @@
     color: #8a8a8a; 
     background-color: transparent; 
     border: 0.1px solid transparent; 
+    background-image: url('https://img.icons8.com/ios/452/crescent-moon.png');
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 45%;
+    
+}
+
+
+
+.world-header {
+    display: flex;
+    text-align: center;
+    box-shadow: 0 4px 2px -2px gray;
+    
+        h1{
+            flex: 1;
+        }
+        button{
+            flex: 1;
+            
+        }
 }

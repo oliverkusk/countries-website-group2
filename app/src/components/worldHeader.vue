@@ -4,9 +4,11 @@
         <button @click="darkThemeSwitch" class="theme__button">Dark Mode</button>
     </div>
 </template>
+
 <style lang="scss">
 @import '@/assets/scss/world-header.scss';
 </style>
+
 <script>
 import themeChanger from "../theme.js";
 export default {

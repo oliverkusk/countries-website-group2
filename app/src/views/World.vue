@@ -1,6 +1,6 @@
 <template>
   <div>
-  <world-header></world-header>
+  
   <search-filter></search-filter>
   <filter-region></filter-region>
   
@@ -11,13 +11,13 @@
 <script>
 import SearchFilter from '@/components/SearchFilter'
 import FilterRegion from '@/components/FilterRegion'
-import WorldHeader from '@/components/worldHeader'
+
 import CountryContainer from '@/components/CountryBox'
 
 
 export default {
   components: {
-    SearchFilter, FilterRegion, WorldHeader, CountryContainer
+    SearchFilter, FilterRegion, CountryContainer
   }
 }
 </script>
