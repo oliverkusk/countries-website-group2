@@ -6,7 +6,21 @@
       </div>
       <div class="country__name">
         {{ country.name }}
-        <div class="country__info"></div>
+        <div class="country__info">
+          <div class="population">
+            <h4>Population</h4>
+            <p>{{ country.population }}</p>
+          </div>
+          <div class="Region">
+            <h4>Region</h4>
+            <p>{{ country.region }}</p>
+          </div>
+
+          <div class="capital">
+            <h4>Capital</h4>
+            Population
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -24,7 +38,7 @@ export default {
   created() {
     axios
       .get(
-        "https://restcountries.eu/rest/v2/all?fields=name;capital;currencies;flag"
+        "https://restcountries.eu/rest/v2/all?fields=name;capital;currencies;flag;region;population"
       )
       .then((response) => (this.countries = response.data))
       .catch((err) => console.log(err));
