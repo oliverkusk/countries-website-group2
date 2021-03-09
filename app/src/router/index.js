@@ -6,7 +6,7 @@ import World from '@/views/World'
 const routes = [
  
   {
-    path: '/world',
+    path: '/',
     name: 'World',
     component: World
   }
