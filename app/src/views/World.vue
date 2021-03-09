@@ -3,9 +3,9 @@
   <world-header></world-header>
   <search-filter></search-filter>
   <filter-region></filter-region>
-  
+  <country-container></country-container>
+
   </div>
-  <div><country-container></country-container></div>
 </template>
 
 <script>
