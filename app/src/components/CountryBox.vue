@@ -2,7 +2,7 @@
     <div class="country-container"> 
         <div class="country">  
             <div class="country__flag">Flag</div>
-            <div class="country__name"><p>{{ country.name }}</p>
+            <div class="country__name">
                 <div class="country__info"></div>
             </div>
         </div>
