@@ -34,20 +34,13 @@
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-.country__flag {
-  background-color: chocolate;
-
-  background-size: cover;
-
-
-
-
-
-}
+.country__flag {}
 
 .country__flag img {
   width: 100%;
-  height: auto;
+  height: 150px;
+  object-fit: cover;
+
 
 
 

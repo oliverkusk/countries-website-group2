@@ -8,17 +8,14 @@
         {{ country.name }}
         <div class="country__info">
           <div class="population">
-            <h4>Population</h4>
-            <p>{{ country.population }}</p>
+            <p>Population: {{ country.population }}</p>
           </div>
           <div class="Region">
-            <h4>Region</h4>
-            <p>{{ country.region }}</p>
+            <p>Region: {{ country.region }}</p>
           </div>
 
           <div class="capital">
-            <h4>Capital</h4>
-            Population
+            <p>Capital: {{ country.capital }}</p>
           </div>
         </div>
       </div>
