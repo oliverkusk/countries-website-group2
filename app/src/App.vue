@@ -1,6 +1,7 @@
 <template>
+  <div><h1>Where in the world?</h1></div>
   <div class="app" :class="mode">
-    <world-header :mode="mode"></world-header>
+    <world-header :mode="mode" @toggle="toggle"></world-header>
   </div>
   <router-view />
 </template>
@@ -17,6 +18,15 @@ export default {
   },
   components: {
     WorldHeader,
+  },
+  methods: {
+    toggle() {
+      if (this.mode === "dark") {
+        this.mode = "light";
+      } else {
+        this.mode = "dark";
+      }
+    },
   },
 };
 </script>
@@ -35,6 +45,7 @@ export default {
   min-height: 100vh;
   background-color: #f3f3f3;
   color: #15202b;
+  transition: background 0.3s ease-in-out;
 }
 
 .dark {
