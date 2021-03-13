@@ -1,9 +1,8 @@
 <template>
-  <div><h1>Where in the world?</h1></div>
   <div class="app" :class="mode">
     <world-header :mode="mode" @toggle="toggle"></world-header>
+    <router-view />
   </div>
-  <router-view />
 </template>
 
 <script>

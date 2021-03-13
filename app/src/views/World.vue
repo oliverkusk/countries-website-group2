@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <search-filter></search-filter>
-    <filter-region></filter-region>
-  </div>
+  <search-filter></search-filter>
+  <filter-region></filter-region>
   <country-container></country-container>
 </template>
 
@@ -11,7 +9,6 @@ import SearchFilter from "@/components/SearchFilter";
 import FilterRegion from "@/components/FilterRegion";
 
 import CountryContainer from "@/components/CountryBox";
-
 export default {
   components: {
     SearchFilter,

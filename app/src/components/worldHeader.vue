@@ -1,5 +1,6 @@
 <template>
   <header class="world-header">
+    <h1>Where in the world?</h1>
     <h1>{{ mode }} Mode</h1>
     <Toggle :mode="mode" @toggle="$emit('toggle')" />
   </header>
