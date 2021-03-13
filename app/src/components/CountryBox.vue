@@ -1,7 +1,8 @@
 <template>
   <div>
     <h3>Filter By Region</h3>
-    <select v-model="category">
+    <select v-model="country">
+      <option valeu="">--</option>
       <option valeu="Africa">Africa</option>
       <option valeu="Americas">Americas</option>
       <option valeu="Asia">Asia</option>
