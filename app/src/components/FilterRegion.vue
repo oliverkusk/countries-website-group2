@@ -1,5 +1,5 @@
 <template>
-    <div class="filter">
+  <!-- <div class="filter">
         <button class="filter__dropbtn">Filter by Region</button>
         <div class="filter__dropdown">
             <a href="#africa">Africa</a>
@@ -8,9 +8,10 @@
             <a href="#europe">Europe</a>
             <a href="#oceania">Oceania</a>
         </div>
-    </div>
+    </div> -->
+  <div></div>
 </template>
 
 <style lang="scss">
-    @import '@/assets/scss/searchfilter.scss';
+@import "@/assets/scss/searchfilter.scss";
 </style>

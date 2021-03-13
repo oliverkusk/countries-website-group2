@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <!-- <div class="wrapper">
     <div class="search">
       <input
         type="text"
@@ -7,7 +7,8 @@
         placeholder="Search for a country..."
       />
     </div>
-  </div>
+  </div> -->
+  <div></div>
 </template>
 
 <style lang="scss">
