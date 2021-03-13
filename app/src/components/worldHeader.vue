@@ -1,33 +1,37 @@
 <template>
-    <div class="world-header">
-        <h1>Where in the world?</h1>
-        <button @click="darkThemeSwitch" class="theme__button">Dark Mode</button>
-    </div>
+  <header class="world-header">
+    <h1>Where in the world?</h1>
+    <h1>{{ mode }} Mode</h1>
+  </header>
 </template>
 
-<style lang="scss">
-@import '@/assets/scss/world-header.scss';
-</style>
+
 
 <script>
-import themeChanger from "../theme.js";
 export default {
-  name: "HelloWorld",
-  props: {
-    msg: String,
-  },
-  data() {
-    return {
-      themeChanger: null,
-    };
-  },
-  methods: {
-    darkThemeSwitch() {
-      this.themeChanger._darkThemeSwitch();
-    },
-  },
-  created() {
-    this.themeChanger = new themeChanger();
-  },
+  props: ["mode"],
 };
 </script>
+
+<style scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px;
+  height: 60px;
+  background: #c3c3c3;
+  transition: background 0.3s ease-in-out;
+}
+
+header h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+</style>

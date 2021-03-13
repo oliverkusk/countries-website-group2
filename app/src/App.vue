@@ -1,33 +1,44 @@
 <template>
-  <world-header></world-header>
-  <router-view/>
+  <div class="app" :class="mode">
+    <world-header :mode="mode"></world-header>
+  </div>
+  <router-view />
 </template>
 
-<style lang="scss">
-#app {
-  
+<script>
+import WorldHeader from "./components/worldHeader.vue";
+
+export default {
+  name: "app",
+  data() {
+    return {
+      mode: "light",
+    };
+  },
+  components: {
+    WorldHeader,
+  },
+};
+</script>
+
+
+    WorldHeader<style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-sherif;
 }
 
-#nav {
-  padding: 30px;
+.app {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f3f3f3;
+  color: #15202b;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.dark {
+  background: #192734;
+  color: #f3f3f3;
 }
 </style>
-
-<script>
-  import WorldHeader from '@/components/worldHeader'
-
-  export default {
-  components: {
-    WorldHeader
-  }
-}
-</script>
