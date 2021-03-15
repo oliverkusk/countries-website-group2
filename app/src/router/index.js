@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import World from '@/views/World'
-import Details from '@/component/Details'
+import Details from '@/components/Details'
+
 
 
 const routes = [
