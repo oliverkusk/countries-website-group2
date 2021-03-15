@@ -1,24 +1,19 @@
 <template>
-  <div>
-    <h3>Filter By Region</h3>
+  <div class="filter">
+    <input type="text" v-model="name" placeholder="Search for a country.." />
+
     <select v-model="country">
-      <option valeu="">--</option>
-      <option valeu="Africa">Africa</option>
+      <option value="" disabled selected hidden>Filter by Region</option>
+      <option value="">All</option>
+      <option value="Africa">Africa</option>
       <option valeu="Americas">Americas</option>
       <option valeu="Asia">Asia</option>
       <option valeu="Europe">Europe</option>
       <option valeu="Oceania">Oceania</option>
     </select>
-    <ul>
-      <li v-for="product in filterProductsByCategory" :key="product.earth">
-        Product Name : {{ product.name }} - Price : {{ product.price }} ({{
-          country.region
-        }})
-      </li>
-    </ul>
   </div>
   <div class="country-container">
-    <div class="country" v-for="country in countries" :key="country.name">
+    <div class="country" v-for="country in filterC" :key="country.name">
       <div class="country__flag">
         <img :src="country.flag" alt="" />
       </div>
@@ -47,21 +42,24 @@ import axios from "axios";
 export default {
   data() {
     return {
-      computed: {
-        countries: function () {
-          return this.country.filter(
-            (country) => !country.countries.indexOf(this.country)
-          );
-        },
-      },
-
       countries: [],
+      country: "",
+      name: "",
     };
+  },
+  computed: {
+    filterC: function () {
+      return this.countries.filter(
+        (country) =>
+          !country.region.indexOf(this.country) &&
+          !country.name.toLowerCase().indexOf(this.name.toLowerCase())
+      );
+    },
   },
   created() {
     axios
       .get(
-        "https://restcountries.eu/rest/v2/all?fields=name;capital;currencies;flag;region;population"
+        "https://restcountries.eu/rest/v2/all?fields=name;capital;currencies;flag;region;population;all"
       )
       .then((response) => (this.countries = response.data))
       .catch((err) => console.log(err));

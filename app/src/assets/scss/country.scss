@@ -23,6 +23,7 @@
   position: relative;
   top: 0;
   transition: all .1s ease-in;
+  border-radius: 7px;
 
 
 
@@ -73,6 +74,34 @@
   /* make p grow to fill available space*/
 
 
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 25px 0 25px;
+
+  input {
+    padding: 15px;
+    width: 25rem;
+    border-radius: 5px;
+    border-style: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  select {
+    padding: 15px;
+    width: 10rem;
+    border-radius: 5px;
+    border-style: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 @media only screen and (min-width: 500px) {
